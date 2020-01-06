@@ -32,12 +32,11 @@ O(1) because it's straightforward math equation that will take the same amount o
 O(1) odd numbers are true, even number false
 
 //11
+const hanoi = function(disc, src, aux, dst){
+    if (disc > 0){
+      hanoi(disc - 1, src, dst, aux);
+      document.write("Move disc " + disc + " from " + src + " to " + dst + "<br />");
+      hanoi(disc - 1, aux, src, dst)
+    }
+  }
 
-
-//12
-
-
-//13
-
-
-//14
